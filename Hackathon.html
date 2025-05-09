@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hungry Hour</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Tagesschrift&display=swap">
+    <style>
+        .navbar {
+            position: absolute;
+            left: 330px;
+            bottom: 490px;
+            border-radius: 12px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 20px 25px;
+        }
+
+        .navbar li a {
+            padding: 8px 8px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+        .navbar li a:hover {
+            color: red;
+        }
+
+        body {
+            background: url(https://t3.ftcdn.net/jpg/02/05/87/60/240_F_205876015_hYYs7ugqoU8QAobSS3TbnGQ92qyS5gEc.jpg);
+            background-color: rgb(245, 93, 93);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 0px;
+
+
+        }
+
+        .left h1 {
+            font-weight: bold;
+            font-family: "Tagesschrift", system-ui;
+            font-size: 40px;
+            color: navajowhite;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 10px;
+
+        }
+
+        .btn1:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        .btn1 {
+            background-color: orange;
+        }
+
+        .container {
+            display: inline-block;
+            position: absolute;
+            background-color: rgba(255, 248, 220, 0.8);
+            border-radius: 15px;
+            top: 38px;
+            left: 5px;
+            margin: 45px 60px;
+            padding: 2px 2px;
+            width: 245px;
+            height: 460px;
+            color: #333;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .container h2 {
+            text-align: center;
+            font-weight: bolder;
+            font-family: cursive;
+
+        }
+
+        .container input {
+            text-align: center;
+            background-color: beige;
+        }
+
+        .container label {
+            font-weight: bold;
+            text-align: center;
+            font-family: cursive;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            color: red;
+        }
+
+        .btn {
+            background-color: orange;
+            
+        }
+
+        .container1 {
+            display: inline-block;
+            position: absolute;
+            background-color: rgba(255, 248, 220, 0.8);
+            border-radius: 15px;
+            top: 38px;
+            right: 5px;
+            margin: 45px 60px;
+            padding: 2px 2px;
+            width: 245px;
+            height: 460px;
+            color: #333;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .container1 h2 {
+            text-align: center;
+            font-weight: bolder;
+            font-family: cursive;
+
+        }
+
+        .container1 input {
+            text-align: center;
+            background-color: beige;
+        }
+
+        .container1 label {
+            text-align: center;
+            font-weight: bold;
+            font-family: cursive;
+        }
+
+        .menu {
+            display: inline-block;
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 450px;
+            background-color: rgba(255, 248, 220, 0.8);
+            border-radius: 15px;
+            padding: 20px;
+            color: #333;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu h2 {
+            text-align: center;
+            font-weight: bold;
+            font-family: cursive;
+            margin-bottom: 10px;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .menu li {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="left">
+        <h1>The Hungry Hour</h1>
+    </div>
+    <div class="right">
+        <button class="btn1"> 📞Call Us Now</button>
+    </div>
+    <div class="container">
+        <strong>
+            <h2>Save Your Spot</h2>
+        </strong>
+        <hr>
+        <form action="noaction.pfp">
+            <!-- Name -->
+            <div class="form">
+                <label for="name">Enter Your Name:-</label>
+                <br>
+                <input type="text" id="name" name="name" placeholder="Your Good Name!" required>
+                <br>
+            </div>
+            <!-- Phone number -->
+            <div>
+                <label for="Ph_number">Your Phone Number,Please!</label>
+                <br>
+                <input type="number" name="Phone_number" id="Ph_number" placeholder="Phone Number" required>
+                <br>
+            </div>
+            <!-- email -->
+            <div>
+                <label for="email">Your Email:-</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <br>
+            </div>
+            <!-- date -->
+            <div>
+                <label for="date">Choose Your Special Day!</label>
+                <br>
+                <input type="date" name="date" id="date" placeholder="Date" required>
+                <br>
+            </div>
+            <!-- time -->
+            <div>
+                <label for="time">Book your Meal Hour!!</label>
+                <br>
+                <input type="time" name="time" id="time" required>
+                <br>
+            </div>
+            <!-- number of guests -->
+            <div>
+                <label><strong>How many guests are joining?</strong></label><br>
+
+                <label>
+                    <input type="radio" name="guests" value="1">
+                    Just one
+                </label><br>
+
+                <label>
+                    <input type="radio" name="guests" value="2">
+                    A table for two
+                </label><br>
+
+                <label>
+                    <input type="radio" name="guests" value="3-4">
+                    Small group (3-4)
+                </label><br>
+
+                <label>
+                    <input type="radio" name="guests" value="5-8">
+                    Dinner party (5–8)
+                </label><br>
+
+                <label>
+                    <input type="radio" name="guests" value="9+">
+                    Big gathering (9+)
+                </label>
+            </div>
+
+            <div>
+                <label for="submit"></label>
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="menu">
+        <h2>Menu</h2>
+        <hr>
+        <ul>
+            <li><strong>Margherita Pizza</strong> - ₹299</li>
+            <li><strong>Butter Chicken</strong> - ₹349</li>
+            <li><strong>Paneer Tikka</strong> - ₹269</li>
+            <li><strong>Spaghetti Aglio e Olio</strong> - ₹229</li>
+            <li><strong>Veg Biryani</strong> - ₹199</li>
+            <li><strong>Chicken Momos (6 pcs)</strong> - ₹149</li>
+            <li><strong>Brownie with Ice Cream</strong> - ₹129</li>
+            <li><strong>Mojito</strong> - ₹99</li>
+        </ul>
+    </div>
+
+    <div class="container1">
+        <h2>Feedback Form</h2>
+        <hr>
+        <form action="noaction.pfp">
+            <!-- Name -->
+            <div>
+                <label for="name">Your Name:-</label>
+                <br>
+                <input type="text" id="name" placeholder="Name Please" name="name">
+                <br>
+            </div>
+            <!-- email -->
+            <div>
+                <label for="email">Where should we Thank You?</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <br>
+                <hr>
+            </div>
+            <!-- Rating -->
+            <div>
+                <label for="rating">Dine-o-meter</label>
+                <br>
+                <label>
+                    <input type="radio" name="rate" id="rating" value="1 Star">
+                    We are Sorry (⭐)
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="rate" id="rating" value="2 star">
+                    We'll Improve (⭐⭐)
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="rate" id="rating" value="3 star">
+                    Descent (⭐⭐⭐)
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="rate" id="rating" value="4 star">
+                    Almost There!(⭐⭐⭐⭐)
+                </label>
+
+                <label>
+                    <input type="radio" name="rate" id="rating" value="5 star">
+                    Flawless!!(⭐⭐⭐⭐⭐)
+                </label>
+            </div>
+            <hr>
+            <div>
+                <label for="Feedback">Mention your Honest Review..</label>
+                <br>
+
+                <textarea id="Feedback" name="Feedback" rows="4" cols="28">
+           </textarea>
+            </div>
+            <div>
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
